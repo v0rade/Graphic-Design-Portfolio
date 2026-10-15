@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio — Graphic Design &amp; Art Direction</title>
+  <meta name="description" content="Graphic design portfolio: brand identity, posters, packaging, editorial and campaign work.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header" id="header">
+    <a href="#top" class="brand" data-site="name">Your Name</a>
+    <nav aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <span class="status"><i></i>Available for work</span>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="hero-meta">
+        <span data-site="role"></span>
+        <span data-site="location"></span>
+        <span>Portfolio <span id="year"></span></span>
+      </p>
+      <h1 class="hero-title">Identity, print <br>&amp; packaging, <br>designed with <em>intent.</em></h1>
+      <div class="hero-foot">
+        <p class="hero-intro">Graphic designer and art director creating brand systems, posters, packaging and editorial work rooted in typography, grids and the tactile qualities of print.</p>
+        <a class="pill-link" href="#work">View selected work <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker-track" id="ticker"></div></div>
+
+    <section id="work" class="work">
+      <div class="work-head">
+        <h2 class="section-label"><span>01</span>Selected Work <sup id="workCount"></sup></h2>
+        <div class="filters" role="tablist" aria-label="Filter projects" id="filters"></div>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="section-label"><span>02</span>About</h2>
+      <div>
+        <p class="about-statement" id="statement"></p>
+        <div class="about-cols">
+          <div><h3>Services</h3><ul id="services"></ul></div>
+          <div><h3>Toolkit</h3><ul id="tools"></ul></div>
+          <div><h3>Experience</h3><ul id="experience"></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-label"><span>03</span>Contact</h2>
+      <p class="contact-lead">Have a project in mind? Let’s make something worth printing.</p>
+      <a class="contact-mail" id="mail" href="#"></a>
+      <div class="contact-links" id="links"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="footYear"></span> <span data-site="name"></span></span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <!-- Project viewer -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" aria-hidden="true">
+    <button class="modal-close" id="mClose" aria-label="Close project">Close <span aria-hidden="true">✕</span></button>
+    <div class="modal-media" id="mMedia"></div>
+    <aside class="modal-info">
+      <span class="m-no" id="mNo"></span>
+      <h2 id="mTitle"></h2>
+      <dl>
+        <dt>Client</dt><dd id="mClient"></dd>
+        <dt>Discipline</dt><dd id="mDisc"></dd>
+        <dt>Year</dt><dd id="mYear"></dd>
+      </dl>
+      <p id="mSummary"></p>
+      <ul class="tags" id="mTags"></ul>
+      <div class="modal-nav">
+        <button id="mPrev">← Previous</button>
+        <button id="mNext">Next →</button>
+      </div>
+    </aside>
+  </div>
+
+  <script src="projects.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
