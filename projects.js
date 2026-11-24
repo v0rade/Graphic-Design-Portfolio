@@ -1,13 +1,13 @@
 window.SITE = {
-  name: "Your Name",
+  name: "Geoffta Akwila",
   role: "Graphic Designer & Art Director",
   location: "Available worldwide",
-  email: "hello@yourname.com",
+  email: "geoffta190105@gmail.com",
   links: [
-    { label: "Behance", url: "#" },
-    { label: "Instagram", url: "#" },
-    { label: "LinkedIn", url: "#" },
-    { label: "Download CV", url: "#" }
+    { label: "Behance", url: "https://www.behance.net/jiroaaaaaaaaa" },
+    { label: "Instagram", url: "https://www.instagram.com/geoffta/" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/geoffta/" },
+    { label: "Download CV", url: "https://drive.google.com/file/d/1jdhjfXfc8jzwFiBARmoKV8e9MX09dDwB/view?usp=drive_link" }
   ],
   disciplines: [
     "Brand Identity", "Poster Design", "Packaging", "Editorial",
