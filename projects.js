@@ -1,8 +1,3 @@
-/* ==========================================================================
-   PORTFOLIO CONTENT — edit this file to personalise the site.
-   Projects with status: "pending" are hidden until their image exists.
-   ========================================================================== */
-
 window.SITE = {
   name: "Your Name",
   role: "Graphic Designer & Art Director",
